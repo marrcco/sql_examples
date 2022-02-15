@@ -25,4 +25,4 @@ JOIN product_orders AS po
 ON p.position_id = po.id
 WHERE po.date BETWEEN '2021-01-01' AND '2021-12-01'
 GROUP BY p.product_name
-ORDER BY SUM(p.quantity) DESC
+ORDER BY SUM(p.quantity) DESC;
